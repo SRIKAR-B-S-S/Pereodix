@@ -507,10 +507,6 @@ def symbol(element):
 def main():
     return 'API is working!'
  
-@app.route('/atomic')
-def main():
-    return 'API is working!'
-
 @app.route('/latin')
 def main():
     return 'API is working!'
