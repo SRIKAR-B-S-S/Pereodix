@@ -497,7 +497,7 @@ def atomic(z):
  return (AtomicNumber[a]) 
 
 
-@app.route('/symbol/<element>')
+@app.route('/symbol/<string:element>')
 def symbol(element):
  o=element.title()
  return (symbols[o])
