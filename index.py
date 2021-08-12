@@ -502,5 +502,18 @@ def symbol(element):
  o=element.title()
  return (symbols[o])
 
+
+@app.route('/symbol')
+def main():
+    return 'API is working!'
+ 
+ @app.route('/atomic')
+def main():
+    return 'API is working!'
+ 
+ @app.route('/latin')
+def main():
+    return 'API is working!'
+
 if __name__ == '__main__':
   app.run()
