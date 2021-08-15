@@ -484,23 +484,23 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
-    return 'API is working!'
+    return 'This is Pereodix API get the extension here. https://community.appinventor.mit.edu/t/free-pereodix-get-elements-info-chemistry-made-easy/39169 '
 
 @app.route('/latin/<string:x>')
 def latin_name(x):
   y=x.title()
-  return (LatinName[y] +""+"Made by Yash Sehgal")
+  return (LatinName[y])
 
 @app.route('/atomic/<string:z>')
 def atomic(z):
  a=z.title()
- return (AtomicNumber[a] +""+"Made by Yash Sehgal") 
+ return (AtomicNumber[a]) 
 
 
 @app.route('/symbol/<string:element>')
 def symbol(element):
  o=element.title()
- return (symbols[o] +""+"Made by Yash Sehgal")
+ return (symbols[o])
 
 if __name__ == '__main__':
   app.run()
