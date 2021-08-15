@@ -489,18 +489,18 @@ def main():
 @app.route('/latin/<string:x>')
 def latin_name(x):
   y=x.title()
-  return (LatinName[y])
+  return (LatinName[y] +""+"Made by Yash Sehgal")
 
 @app.route('/atomic/<string:z>')
 def atomic(z):
  a=z.title()
- return (AtomicNumber[a]) 
+ return (AtomicNumber[a] +""+"Made by Yash Sehgal") 
 
 
 @app.route('/symbol/<string:element>')
 def symbol(element):
  o=element.title()
- return (symbols[o])
+ return (symbols[o] +""+"Made by Yash Sehgal")
 
 if __name__ == '__main__':
   app.run()
